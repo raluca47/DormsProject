@@ -1,12 +1,15 @@
 # DormsProject  
 Pasi rulare aplicatie  
+Visual Studio 2022  
+.Net 6.0  
 1.  
 -restore baza de date  
 -ne creem pe pgadmin o baza de date goala  
 -click dreapta pe ea si restore unde lasam formatul custom + selectam dormsFinal.sql din folderul dormsDB  
   
 2.  
--conexiunea cu baza de date  
+-conexiunea cu baza de date
+-Tools - NuGet Package Manager - Package Manager Console
 -run comanda cu numele bazei de date create mai inainte, password-ul de la intrarea in postgres si, la Postgres properties verificam numele host-ului si portul, daca portul nu e cel default trebuie mentionat,daca nu, nu  
   
 scaffold-dbcontext “host=localhost;database=name;username=postgres;password=pass;port=1111” npgsql.entityframeworkcore.postgresql -outputdir models  
