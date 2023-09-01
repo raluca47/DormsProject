@@ -1,0 +1,170 @@
+\doxysection{Dorms\+Project.\+Controllers.\+Dorms\+Controller Class Reference}
+\hypertarget{class_dorms_project_1_1_controllers_1_1_dorms_controller}{}\label{class_dorms_project_1_1_controllers_1_1_dorms_controller}\index{DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}}
+Inheritance diagram for Dorms\+Project.\+Controllers.\+Dorms\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_dorms_project_1_1_controllers_1_1_dorms_controller}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_dorms_project_1_1_controllers_1_1_dorms_controller_a0d1f85459dc709b0bb5b92c57c2aa49f}{Dorms\+Controller}} (\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context}{Dorms\+Context}} context)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_dorms_project_1_1_controllers_1_1_dorms_controller_ae2180e561724b94ec0b465d9fbb76fdb}{Index}} (string sort\+Order, string search\+String, string current\+Filter, int? page)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_dorms_project_1_1_controllers_1_1_dorms_controller_a88a9049a03b44a71aaa8dc657baef653}{Details}} (int? id)
+\item 
+IAction\+Result \mbox{\hyperlink{class_dorms_project_1_1_controllers_1_1_dorms_controller_a3b993282bdb4e34827dfa757481e8f7f}{Create}} ()
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_dorms_project_1_1_controllers_1_1_dorms_controller_ac17cacbf64b9b8096030a31694377481}{Create}} (\mbox{[}Bind("{}Dorm\+Id,Adress\+Id,Complex\+Id"{})\mbox{]} \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorm}{Dorm}} dorm)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_dorms_project_1_1_controllers_1_1_dorms_controller_a4700a1ed4de5aa1dd7dabb5d4c88571c}{Edit}} (int? id)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_dorms_project_1_1_controllers_1_1_dorms_controller_a482e7e6e95aa74e156805cd1d8d6442f}{Edit}} (int id, \mbox{[}Bind("{}Dorm\+Id,Adress\+Id,Complex\+Id"{})\mbox{]} \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorm}{Dorm}} dorm)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_dorms_project_1_1_controllers_1_1_dorms_controller_a84a6d8050293526d35a4485bb1a2cfc9}{Delete}} (int? id)
+\item 
+async Task$<$ IAction\+Result $>$ \mbox{\hyperlink{class_dorms_project_1_1_controllers_1_1_dorms_controller_a5d2a24774b084bd7e95eeedd1cccfe27}{Delete\+Confirmed}} (int id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_dorms_project_1_1_controllers_1_1_dorms_controller_a06ae33daf711cc87e6b3df21162ea0ec}{Dorm\+Exists}} (int id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+readonly \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context}{Dorms\+Context}} \mbox{\hyperlink{class_dorms_project_1_1_controllers_1_1_dorms_controller_aa24bae79e92ab1dc42c78cbc4bfa2269}{\+\_\+context}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{_dorms_controller_8cs_source_l00013}{13}} of file \mbox{\hyperlink{_dorms_controller_8cs_source}{Dorms\+Controller.\+cs}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_dorms_project_1_1_controllers_1_1_dorms_controller_a0d1f85459dc709b0bb5b92c57c2aa49f}\label{class_dorms_project_1_1_controllers_1_1_dorms_controller_a0d1f85459dc709b0bb5b92c57c2aa49f} 
+\index{DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}!DormsController@{DormsController}}
+\index{DormsController@{DormsController}!DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}}
+\doxysubsubsection{\texorpdfstring{DormsController()}{DormsController()}}
+{\footnotesize\ttfamily Dorms\+Project.\+Controllers.\+Dorms\+Controller.\+Dorms\+Controller (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context}{Dorms\+Context}}}]{context }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_dorms_controller_8cs_source_l00017}{17}} of file \mbox{\hyperlink{_dorms_controller_8cs_source}{Dorms\+Controller.\+cs}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dorms_project_1_1_controllers_1_1_dorms_controller_a3b993282bdb4e34827dfa757481e8f7f}\label{class_dorms_project_1_1_controllers_1_1_dorms_controller_a3b993282bdb4e34827dfa757481e8f7f} 
+\index{DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}!Create@{Create}}
+\index{Create@{Create}!DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily IAction\+Result Dorms\+Project.\+Controllers.\+Dorms\+Controller.\+Create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_dorms_controller_8cs_source_l00075}{75}} of file \mbox{\hyperlink{_dorms_controller_8cs_source}{Dorms\+Controller.\+cs}}.
+
+\Hypertarget{class_dorms_project_1_1_controllers_1_1_dorms_controller_ac17cacbf64b9b8096030a31694377481}\label{class_dorms_project_1_1_controllers_1_1_dorms_controller_ac17cacbf64b9b8096030a31694377481} 
+\index{DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}!Create@{Create}}
+\index{Create@{Create}!DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}}
+\doxysubsubsection{\texorpdfstring{Create()}{Create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$ IAction\+Result $>$ Dorms\+Project.\+Controllers.\+Dorms\+Controller.\+Create (\begin{DoxyParamCaption}\item[{\mbox{[}\+Bind("{}\+Dorm\+Id,\+Adress\+Id,\+Complex\+Id"{})\mbox{]} \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorm}{Dorm}}}]{dorm }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_dorms_controller_8cs_source_l00087}{87}} of file \mbox{\hyperlink{_dorms_controller_8cs_source}{Dorms\+Controller.\+cs}}.
+
+\Hypertarget{class_dorms_project_1_1_controllers_1_1_dorms_controller_a84a6d8050293526d35a4485bb1a2cfc9}\label{class_dorms_project_1_1_controllers_1_1_dorms_controller_a84a6d8050293526d35a4485bb1a2cfc9} 
+\index{DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}!Delete@{Delete}}
+\index{Delete@{Delete}!DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}}
+\doxysubsubsection{\texorpdfstring{Delete()}{Delete()}}
+{\footnotesize\ttfamily async Task$<$ IAction\+Result $>$ Dorms\+Project.\+Controllers.\+Dorms\+Controller.\+Delete (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_dorms_controller_8cs_source_l00148}{148}} of file \mbox{\hyperlink{_dorms_controller_8cs_source}{Dorms\+Controller.\+cs}}.
+
+\Hypertarget{class_dorms_project_1_1_controllers_1_1_dorms_controller_a5d2a24774b084bd7e95eeedd1cccfe27}\label{class_dorms_project_1_1_controllers_1_1_dorms_controller_a5d2a24774b084bd7e95eeedd1cccfe27} 
+\index{DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}!DeleteConfirmed@{DeleteConfirmed}}
+\index{DeleteConfirmed@{DeleteConfirmed}!DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}}
+\doxysubsubsection{\texorpdfstring{DeleteConfirmed()}{DeleteConfirmed()}}
+{\footnotesize\ttfamily async Task$<$ IAction\+Result $>$ Dorms\+Project.\+Controllers.\+Dorms\+Controller.\+Delete\+Confirmed (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_dorms_controller_8cs_source_l00170}{170}} of file \mbox{\hyperlink{_dorms_controller_8cs_source}{Dorms\+Controller.\+cs}}.
+
+\Hypertarget{class_dorms_project_1_1_controllers_1_1_dorms_controller_a88a9049a03b44a71aaa8dc657baef653}\label{class_dorms_project_1_1_controllers_1_1_dorms_controller_a88a9049a03b44a71aaa8dc657baef653} 
+\index{DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}!Details@{Details}}
+\index{Details@{Details}!DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}}
+\doxysubsubsection{\texorpdfstring{Details()}{Details()}}
+{\footnotesize\ttfamily async Task$<$ IAction\+Result $>$ Dorms\+Project.\+Controllers.\+Dorms\+Controller.\+Details (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_dorms_controller_8cs_source_l00055}{55}} of file \mbox{\hyperlink{_dorms_controller_8cs_source}{Dorms\+Controller.\+cs}}.
+
+\Hypertarget{class_dorms_project_1_1_controllers_1_1_dorms_controller_a06ae33daf711cc87e6b3df21162ea0ec}\label{class_dorms_project_1_1_controllers_1_1_dorms_controller_a06ae33daf711cc87e6b3df21162ea0ec} 
+\index{DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}!DormExists@{DormExists}}
+\index{DormExists@{DormExists}!DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}}
+\doxysubsubsection{\texorpdfstring{DormExists()}{DormExists()}}
+{\footnotesize\ttfamily bool Dorms\+Project.\+Controllers.\+Dorms\+Controller.\+Dorm\+Exists (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_dorms_controller_8cs_source_l00186}{186}} of file \mbox{\hyperlink{_dorms_controller_8cs_source}{Dorms\+Controller.\+cs}}.
+
+\Hypertarget{class_dorms_project_1_1_controllers_1_1_dorms_controller_a482e7e6e95aa74e156805cd1d8d6442f}\label{class_dorms_project_1_1_controllers_1_1_dorms_controller_a482e7e6e95aa74e156805cd1d8d6442f} 
+\index{DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}!Edit@{Edit}}
+\index{Edit@{Edit}!DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily async Task$<$ IAction\+Result $>$ Dorms\+Project.\+Controllers.\+Dorms\+Controller.\+Edit (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{\mbox{[}\+Bind("{}\+Dorm\+Id,\+Adress\+Id,\+Complex\+Id"{})\mbox{]} \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorm}{Dorm}}}]{dorm }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_dorms_controller_8cs_source_l00119}{119}} of file \mbox{\hyperlink{_dorms_controller_8cs_source}{Dorms\+Controller.\+cs}}.
+
+\Hypertarget{class_dorms_project_1_1_controllers_1_1_dorms_controller_a4700a1ed4de5aa1dd7dabb5d4c88571c}\label{class_dorms_project_1_1_controllers_1_1_dorms_controller_a4700a1ed4de5aa1dd7dabb5d4c88571c} 
+\index{DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}!Edit@{Edit}}
+\index{Edit@{Edit}!DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}}
+\doxysubsubsection{\texorpdfstring{Edit()}{Edit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily async Task$<$ IAction\+Result $>$ Dorms\+Project.\+Controllers.\+Dorms\+Controller.\+Edit (\begin{DoxyParamCaption}\item[{int?}]{id }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_dorms_controller_8cs_source_l00097}{97}} of file \mbox{\hyperlink{_dorms_controller_8cs_source}{Dorms\+Controller.\+cs}}.
+
+\Hypertarget{class_dorms_project_1_1_controllers_1_1_dorms_controller_ae2180e561724b94ec0b465d9fbb76fdb}\label{class_dorms_project_1_1_controllers_1_1_dorms_controller_ae2180e561724b94ec0b465d9fbb76fdb} 
+\index{DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}!Index@{Index}}
+\index{Index@{Index}!DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}}
+\doxysubsubsection{\texorpdfstring{Index()}{Index()}}
+{\footnotesize\ttfamily async Task$<$ IAction\+Result $>$ Dorms\+Project.\+Controllers.\+Dorms\+Controller.\+Index (\begin{DoxyParamCaption}\item[{string}]{sort\+Order,  }\item[{string}]{search\+String,  }\item[{string}]{current\+Filter,  }\item[{int?}]{page }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_dorms_controller_8cs_source_l00024}{24}} of file \mbox{\hyperlink{_dorms_controller_8cs_source}{Dorms\+Controller.\+cs}}.
+
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_dorms_project_1_1_controllers_1_1_dorms_controller_aa24bae79e92ab1dc42c78cbc4bfa2269}\label{class_dorms_project_1_1_controllers_1_1_dorms_controller_aa24bae79e92ab1dc42c78cbc4bfa2269} 
+\index{DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}!\_context@{\_context}}
+\index{\_context@{\_context}!DormsProject.Controllers.DormsController@{DormsProject.Controllers.DormsController}}
+\doxysubsubsection{\texorpdfstring{\_context}{\_context}}
+{\footnotesize\ttfamily readonly \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context}{Dorms\+Context}} Dorms\+Project.\+Controllers.\+Dorms\+Controller.\+\_\+context\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{_dorms_controller_8cs_source_l00015}{15}} of file \mbox{\hyperlink{_dorms_controller_8cs_source}{Dorms\+Controller.\+cs}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Dorms\+Project/\+Dorms\+Project/\+Controllers/\mbox{\hyperlink{_dorms_controller_8cs}{Dorms\+Controller.\+cs}}\end{DoxyCompactItemize}

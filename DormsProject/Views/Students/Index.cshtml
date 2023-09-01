@@ -1,0 +1,94 @@
+﻿@model X.PagedList.IPagedList<DormsProject.Models.Student>
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewData["Title"] = "Students";
+}
+
+<h1>Students</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+@using (Html.BeginForm("Index", "Students", FormMethod.Get))
+{
+    <p>
+        Find by name: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" />
+    </p>
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.ActionLink("Last Name", "Index", new { sortOrder = ViewBag.LastNameSortParm = "last_name" , currentFilter=ViewBag.CurrentFilter})
+            </th>
+            <th>
+                @Html.ActionLink("First Name", "Index", new { sortOrder = ViewBag.FirstNameSortParm = "first_name" , currentFilter=ViewBag.CurrentFilter})
+            </th>
+            <th>
+				Study year
+            </th>
+            <th>
+				Form of Education
+            </th>
+            <th>
+                Cnp
+            </th>
+            <th>
+                Room Number
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CnpNavigation.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CnpNavigation.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StudyYear)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FormOfEducation)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CnpNavigation.Cnp)
+                </td>
+                <td>
+					@Html.DisplayFor(modelItem => item.RoomNumberNavigation.RoomNumber)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.StudentId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.StudentId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.StudentId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index","Students",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+
+
+
+
+
+
+
+

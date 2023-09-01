@@ -1,0 +1,347 @@
+\doxysection{Dorms\+Context.\+cs}
+\hypertarget{_dorms_context_8cs_source}{}\label{_dorms_context_8cs_source}\index{DormsProject/DormsProject/Models/DormsContext.cs@{DormsProject/DormsProject/Models/DormsContext.cs}}
+\mbox{\hyperlink{_dorms_context_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }Microsoft.EntityFrameworkCore;}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00004}00004\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00005}00005\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_dorms_project_1_1_models}{DormsProject.Models}};}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00007}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context}{00007}}\ \textcolor{keyword}{public}\ \textcolor{keyword}{partial\ class\ }\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context}{DormsContext}}\ :\ DbContext}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00008}00008\ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00009}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_ae34aeead4cd26e2dfdf1208fb95c5e26}{00009}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_ae34aeead4cd26e2dfdf1208fb95c5e26}{DormsContext}}()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00010}00010\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00011}00011\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00013}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_af37e2d1108294a3ae7107b9f742a9688}{00013}}\ \ \ \ \ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_af37e2d1108294a3ae7107b9f742a9688}{DormsContext}}(DbContextOptions<DormsContext>\ options)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ :\ base(options)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00015}00015\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00016}00016\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00018}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a9d06bd3e65fe4d2dfc5b72a9dbc0a310}{00018}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ DbSet<Address>\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a9d06bd3e65fe4d2dfc5b72a9dbc0a310}{Addresses}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00020}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_adbb0dc3eccc366e40c9ec98d756b44dd}{00020}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ DbSet<Administrator>\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_adbb0dc3eccc366e40c9ec98d756b44dd}{Administrators}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00022}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a3f333c6fba618ce5feb48126b6eb6b11}{00022}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ DbSet<Complex>\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a3f333c6fba618ce5feb48126b6eb6b11}{Complexes}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00024}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a69c9fbcedd351bdd55887002f202d00b}{00024}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ DbSet<Contract>\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a69c9fbcedd351bdd55887002f202d00b}{Contracts}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00026}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a5eb3ccd59b1a5f35410a18c8fc1d98f8}{00026}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ DbSet<Dorm>\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a5eb3ccd59b1a5f35410a18c8fc1d98f8}{Dorms}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00028}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a9ca6978e878d001f075fd3c576a9bd00}{00028}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ DbSet<Faculty>\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a9ca6978e878d001f075fd3c576a9bd00}{Faculties}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00030}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a708b17dc6ef5c57cb95374d24fa892e8}{00030}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ DbSet<Person>\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a708b17dc6ef5c57cb95374d24fa892e8}{People}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00032}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a95955ab5f88c2a7666f9edab0e503a57}{00032}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ DbSet<Professor>\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a95955ab5f88c2a7666f9edab0e503a57}{Professors}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00034}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_abadec99804e7f0f4fa996314677454c9}{00034}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ DbSet<Room>\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_abadec99804e7f0f4fa996314677454c9}{Rooms}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00036}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a7d698413825975a6b8003a18f1eea455}{00036}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{virtual}\ DbSet<Student>\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a7d698413825975a6b8003a18f1eea455}{Students}}\ \{\ \textcolor{keyword}{get};\ \textcolor{keyword}{set};\ \}}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00038}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a79c07e0383f92c9044eb2515c3df5173}{00038}}\ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a79c07e0383f92c9044eb2515c3df5173}{OnConfiguring}}(DbContextOptionsBuilder\ \mbox{\hyperlink{_program_8cs_a837e64f59efb533e443144192837ccd2}{optionsBuilder}})}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00039}00039\ \textcolor{preprocessor}{\#warning\ To\ protect\ potentially\ sensitive\ information\ in\ your\ connection\ string,\ you\ should\ move\ it\ out\ of\ source\ code.\ You\ can\ avoid\ scaffolding\ the\ connection\ string\ by\ using\ the\ Name=\ syntax\ to\ read\ it\ from\ configuration\ -\/\ see\ https:}\textcolor{comment}{//go.microsoft.com/fwlink/?linkid=2131148.\ For\ more\ guidance\ on\ storing\ connection\ strings,\ see\ http://go.microsoft.com/fwlink/?LinkId=723263.}}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00040}00040\ \ \ \ \ \ \ \ \ =>\ \mbox{\hyperlink{_program_8cs_a837e64f59efb533e443144192837ccd2}{optionsBuilder}}.UseNpgsql(\textcolor{stringliteral}{"{}Host=localhost;Database=dorms;Username=postgres;Password=raluca;\ Port=4747"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00042}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a6a6fdaf72d3c47215090d46e70606219}{00042}}\ \ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keyword}{override}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a6a6fdaf72d3c47215090d46e70606219}{OnModelCreating}}(ModelBuilder\ modelBuilder)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00043}00043\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00044}00044\ \ \ \ \ \ \ \ \ modelBuilder.Entity<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_address}{Address}}>(entity\ =>}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00045}00045\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasKey(e\ =>\ e.AddressId).HasName(\textcolor{stringliteral}{"{}address\_pkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00048}00048\ \ \ \ \ \ \ \ \ \ \ \ \ entity.ToTable(\textcolor{stringliteral}{"{}address"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.AddressId)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedNever()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}address\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00053}00053\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.Number).HasColumnName(\textcolor{stringliteral}{"{}number"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.Street)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasMaxLength(50)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}street"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00057}00057\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ modelBuilder.Entity<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_administrator}{Administrator}}>(entity\ =>}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasKey(e\ =>\ e.AdministratorId).HasName(\textcolor{stringliteral}{"{}administrator\_pkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \ \ \ \ entity.ToTable(\textcolor{stringliteral}{"{}administrator"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.AdministratorId)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedNever()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}administrator\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.Cnp)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasMaxLength(13)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}cnp"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.DormId).HasColumnName(\textcolor{stringliteral}{"{}dorm\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasOne(d\ =>\ d.CnpNavigation).WithMany(p\ =>\ p.Administrators)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(d\ =>\ d.Cnp)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}administrator\_person\_cnp\_fkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasOne(d\ =>\ d.Dorm).WithMany(p\ =>\ p.Administrators)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(d\ =>\ d.DormId)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}administrator\_dorm\_id\_fkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ modelBuilder.Entity<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_complex}{Complex}}>(entity\ =>}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasKey(e\ =>\ e.ComplexId).HasName(\textcolor{stringliteral}{"{}complex\_pkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ entity.ToTable(\textcolor{stringliteral}{"{}complex"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.ComplexId)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedNever()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}complex\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.Name)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}character\ varying"{}})}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}name"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00098}00098\ \ \ \ \ \ \ \ \ modelBuilder.Entity<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_contract}{Contract}}>(entity\ =>}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00099}00099\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasKey(e\ =>\ e.ContractId).HasName(\textcolor{stringliteral}{"{}contract\_pkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00101}00101\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ entity.ToTable(\textcolor{stringliteral}{"{}contract"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.ContractId)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedNever()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}contract\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.RoomNumber).HasColumnName(\textcolor{stringliteral}{"{}room\_number"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.StudentId).HasColumnName(\textcolor{stringliteral}{"{}student\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasOne(d\ =>\ d.RoomNumberNavigation).WithMany(p\ =>\ p.Contracts)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(d\ =>\ d.RoomNumber)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00113}00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}contract\_room\_number\_fkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00114}00114\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasOne(d\ =>\ d.Student).WithMany(p\ =>\ p.Contracts)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(d\ =>\ d.StudentId)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}contract\_student\_id\_fkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00119}00119\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00121}00121\ \ \ \ \ \ \ \ \ modelBuilder.Entity<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorm}{Dorm}}>(entity\ =>}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00122}00122\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasKey(e\ =>\ e.DormId).HasName(\textcolor{stringliteral}{"{}dorm\_pkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00124}00124\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00125}00125\ \ \ \ \ \ \ \ \ \ \ \ \ entity.ToTable(\textcolor{stringliteral}{"{}dorm"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00127}00127\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.DormId)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00128}00128\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedNever()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00129}00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}dorm\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00130}00130\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.AdressId).HasColumnName(\textcolor{stringliteral}{"{}adress\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00131}00131\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.ComplexId).HasColumnName(\textcolor{stringliteral}{"{}complex\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00132}00132\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00133}00133\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasOne(d\ =>\ d.Adress).WithMany(p\ =>\ p.Dorms)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00134}00134\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(d\ =>\ d.AdressId)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00135}00135\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00136}00136\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}dorm\_adress\_id\_fkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00138}00138\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasOne(d\ =>\ d.Complex).WithMany(p\ =>\ p.Dorms)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00139}00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(d\ =>\ d.ComplexId)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00141}00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}complex\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00142}00142\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00143}00143\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00144}00144\ \ \ \ \ \ \ \ \ modelBuilder.Entity<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_faculty}{Faculty}}>(entity\ =>}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00145}00145\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00146}00146\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasKey(e\ =>\ e.Building).HasName(\textcolor{stringliteral}{"{}faculty\_pkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00147}00147\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ entity.ToTable(\textcolor{stringliteral}{"{}faculty"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00149}00149\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00150}00150\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.Building)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00151}00151\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedNever()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00152}00152\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}char"{}})}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00153}00153\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}building"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00154}00154\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.AddressId).HasColumnName(\textcolor{stringliteral}{"{}address\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00155}00155\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.DomainName)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00156}00156\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasMaxLength(70)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00157}00157\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}domain\_name"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00158}00158\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.Email)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00159}00159\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasMaxLength(50)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00160}00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}email"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00161}00161\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.PhoneNumber)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00162}00162\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasMaxLength(10)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00163}00163\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}phone\_number"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00164}00164\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00165}00165\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasOne(d\ =>\ d.Address).WithMany(p\ =>\ p.Faculties)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00166}00166\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(d\ =>\ d.AddressId)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00167}00167\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}faculty\_address\_id\_fkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00168}00168\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00169}00169\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00170}00170\ \ \ \ \ \ \ \ \ modelBuilder.Entity<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_person}{Person}}>(entity\ =>}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00171}00171\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00172}00172\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasKey(e\ =>\ e.Cnp).HasName(\textcolor{stringliteral}{"{}person\_pkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00173}00173\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00174}00174\ \ \ \ \ \ \ \ \ \ \ \ \ entity.ToTable(\textcolor{stringliteral}{"{}person"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00175}00175\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00176}00176\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.Cnp)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00177}00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasMaxLength(13)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00178}00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}cnp"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00179}00179\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.AdressId).HasColumnName(\textcolor{stringliteral}{"{}adress\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00180}00180\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.EMail)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00181}00181\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasMaxLength(50)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00182}00182\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}e-\/mail"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00183}00183\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.FirstName)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00184}00184\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasMaxLength(50)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00185}00185\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}first\_name"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00186}00186\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.LastName)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00187}00187\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasMaxLength(50)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00188}00188\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}last\_name"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00189}00189\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00190}00190\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasOne(d\ =>\ d.Adress).WithMany(p\ =>\ p.People)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00191}00191\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(d\ =>\ d.AdressId)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00192}00192\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00193}00193\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}person\_adress\_id\_fkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00194}00194\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00195}00195\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00196}00196\ \ \ \ \ \ \ \ \ modelBuilder.Entity<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_professor}{Professor}}>(entity\ =>}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00197}00197\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00198}00198\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasKey(e\ =>\ e.ProfessorId).HasName(\textcolor{stringliteral}{"{}professor\_pkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00199}00199\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00200}00200\ \ \ \ \ \ \ \ \ \ \ \ \ entity.ToTable(\textcolor{stringliteral}{"{}professor"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00201}00201\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00202}00202\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.ProfessorId)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00203}00203\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedNever()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00204}00204\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}professor\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00205}00205\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.Building)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00206}00206\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}char"{}})}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00207}00207\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}building"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00208}00208\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.Cnp)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00209}00209\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasMaxLength(13)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00210}00210\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}cnp"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00211}00211\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.RoomNumber).HasColumnName(\textcolor{stringliteral}{"{}room\_number"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00212}00212\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00213}00213\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasOne(d\ =>\ d.BuildingNavigation).WithMany(p\ =>\ p.Professors)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00214}00214\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(d\ =>\ d.Building)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00215}00215\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00216}00216\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}professor\_faculty\_building\_fkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00217}00217\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00218}00218\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasOne(d\ =>\ d.CnpNavigation).WithMany(p\ =>\ p.Professors)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00219}00219\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(d\ =>\ d.Cnp)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00220}00220\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00221}00221\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}professor\_person\_cnp\_fkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00222}00222\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00223}00223\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasOne(d\ =>\ d.RoomNumberNavigation).WithMany(p\ =>\ p.Professors)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00224}00224\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(d\ =>\ d.RoomNumber)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00225}00225\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00226}00226\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}professor\_room\_number\_fkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00227}00227\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00228}00228\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasMany(d\ =>\ d.Buildings).WithMany(p\ =>\ p.ProfessorsNavigation)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00229}00229\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .UsingEntity<Dictionary<string,\ object>>(}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00230}00230\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}ProfessorFaculty"{}},}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00231}00231\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ r\ =>\ r.HasOne<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_faculty}{Faculty}}>().WithMany()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00232}00232\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(\textcolor{stringliteral}{"{}Building"{}})}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00233}00233\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00234}00234\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}faculty\_building\_fkey"{}}),}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00235}00235\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ l\ =>\ l.HasOne<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_professor}{Professor}}>().WithMany()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00236}00236\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(\textcolor{stringliteral}{"{}ProfessorId"{}})}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00237}00237\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00238}00238\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}professor\_id\_fkey"{}}),}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00239}00239\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j\ =>}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00240}00240\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00241}00241\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j.HasKey(\textcolor{stringliteral}{"{}ProfessorId"{}},\ \textcolor{stringliteral}{"{}Building"{}}).HasName(\textcolor{stringliteral}{"{}professor\_faculty\_pkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00242}00242\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j.ToTable(\textcolor{stringliteral}{"{}professor\_faculty"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00243}00243\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j.IndexerProperty<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}ProfessorId"{}}).HasColumnName(\textcolor{stringliteral}{"{}professor\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00244}00244\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j.IndexerProperty<\textcolor{keywordtype}{char}>(\textcolor{stringliteral}{"{}Building"{}})}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00245}00245\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}char"{}})}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00246}00246\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}building"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00247}00247\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00248}00248\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00249}00249\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00250}00250\ \ \ \ \ \ \ \ \ modelBuilder.Entity<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_room}{Room}}>(entity\ =>}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00251}00251\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00252}00252\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasKey(e\ =>\ e.RoomNumber).HasName(\textcolor{stringliteral}{"{}room\_pkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00253}00253\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00254}00254\ \ \ \ \ \ \ \ \ \ \ \ \ entity.ToTable(\textcolor{stringliteral}{"{}room"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00255}00255\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00256}00256\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.RoomNumber)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00257}00257\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedNever()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00258}00258\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}room\_number"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00259}00259\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.DormId).HasColumnName(\textcolor{stringliteral}{"{}dorm\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00260}00260\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.Floor).HasColumnName(\textcolor{stringliteral}{"{}floor"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00261}00261\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.Isoccupied).HasColumnName(\textcolor{stringliteral}{"{}isoccupied"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00262}00262\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00263}00263\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasOne(d\ =>\ d.Dorm).WithMany(p\ =>\ p.Rooms)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00264}00264\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(d\ =>\ d.DormId)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00265}00265\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00266}00266\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}dorm\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00267}00267\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00268}00268\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00269}00269\ \ \ \ \ \ \ \ \ modelBuilder.Entity<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_student}{Student}}>(entity\ =>}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00270}00270\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00271}00271\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasKey(e\ =>\ e.StudentId).HasName(\textcolor{stringliteral}{"{}student\_pkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00272}00272\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00273}00273\ \ \ \ \ \ \ \ \ \ \ \ \ entity.ToTable(\textcolor{stringliteral}{"{}student"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00274}00274\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00275}00275\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.StudentId)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00276}00276\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .ValueGeneratedNever()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00277}00277\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}student\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00278}00278\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.Cnp)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00279}00279\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasMaxLength(13)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00280}00280\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}cnp"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00281}00281\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.FormOfEducation)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00282}00282\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasMaxLength(20)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00283}00283\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}form\_of\_education"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00284}00284\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.RoomNumber).HasColumnName(\textcolor{stringliteral}{"{}room\_number"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00285}00285\ \ \ \ \ \ \ \ \ \ \ \ \ entity.Property(e\ =>\ e.StudyYear).HasColumnName(\textcolor{stringliteral}{"{}study\_year"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00286}00286\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00287}00287\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasOne(d\ =>\ d.CnpNavigation).WithMany(p\ =>\ p.Students)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00288}00288\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(d\ =>\ d.Cnp)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00289}00289\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}student\_person\_cnp"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00290}00290\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00291}00291\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasOne(d\ =>\ d.RoomNumberNavigation).WithMany(p\ =>\ p.Students)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00292}00292\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(d\ =>\ d.RoomNumber)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00293}00293\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00294}00294\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}student\_room\_number"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00295}00295\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00296}00296\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasMany(d\ =>\ d.Buildings).WithMany(p\ =>\ p.Students)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00297}00297\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .UsingEntity<Dictionary<string,\ object>>(}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00298}00298\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}StudentFaculty"{}},}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00299}00299\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ r\ =>\ r.HasOne<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_faculty}{Faculty}}>().WithMany()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00300}00300\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(\textcolor{stringliteral}{"{}Building"{}})}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00301}00301\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00302}00302\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}faculty\_building\_fkey"{}}),}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00303}00303\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ l\ =>\ l.HasOne<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_student}{Student}}>().WithMany()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00304}00304\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(\textcolor{stringliteral}{"{}StudentId"{}})}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00305}00305\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00306}00306\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}student\_id\_fkey"{}}),}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00307}00307\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j\ =>}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00308}00308\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00309}00309\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j.HasKey(\textcolor{stringliteral}{"{}StudentId"{}},\ \textcolor{stringliteral}{"{}Building"{}}).HasName(\textcolor{stringliteral}{"{}student\_faculty\_pkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00310}00310\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j.ToTable(\textcolor{stringliteral}{"{}student\_faculty"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00311}00311\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j.IndexerProperty<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}StudentId"{}}).HasColumnName(\textcolor{stringliteral}{"{}student\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00312}00312\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j.IndexerProperty<\textcolor{keywordtype}{char}>(\textcolor{stringliteral}{"{}Building"{}})}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00313}00313\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnType(\textcolor{stringliteral}{"{}char"{}})}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00314}00314\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasColumnName(\textcolor{stringliteral}{"{}building"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00315}00315\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00316}00316\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00317}00317\ \ \ \ \ \ \ \ \ \ \ \ \ entity.HasMany(d\ =>\ d.Professors).WithMany(p\ =>\ p.Students)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00318}00318\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .UsingEntity<Dictionary<string,\ object>>(}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00319}00319\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}StudentProfessor"{}},}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00320}00320\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ r\ =>\ r.HasOne<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_professor}{Professor}}>().WithMany()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00321}00321\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(\textcolor{stringliteral}{"{}ProfessorId"{}})}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00322}00322\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00323}00323\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}professor\_id\_fkey"{}}),}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00324}00324\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ l\ =>\ l.HasOne<\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_student}{Student}}>().WithMany()}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00325}00325\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasForeignKey(\textcolor{stringliteral}{"{}StudentId"{}})}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00326}00326\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .OnDelete(DeleteBehavior.ClientSetNull)}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00327}00327\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .HasConstraintName(\textcolor{stringliteral}{"{}student\_id\_fkey"{}}),}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00328}00328\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j\ =>}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00329}00329\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00330}00330\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j.HasKey(\textcolor{stringliteral}{"{}StudentId"{}},\ \textcolor{stringliteral}{"{}ProfessorId"{}}).HasName(\textcolor{stringliteral}{"{}student\_professor\_pkey"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00331}00331\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j.ToTable(\textcolor{stringliteral}{"{}student\_professor"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00332}00332\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j.IndexerProperty<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}StudentId"{}}).HasColumnName(\textcolor{stringliteral}{"{}student\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00333}00333\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ j.IndexerProperty<\textcolor{keywordtype}{int}>(\textcolor{stringliteral}{"{}ProfessorId"{}}).HasColumnName(\textcolor{stringliteral}{"{}professor\_id"{}});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00334}00334\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00335}00335\ \ \ \ \ \ \ \ \ \});}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00336}00336\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00337}00337\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a782d146185c7de8f061401c5d54e15af}{OnModelCreatingPartial}}(modelBuilder);}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00338}00338\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00339}00339\ }
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00340}\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a782d146185c7de8f061401c5d54e15af}{00340}}\ \ \ \ \ partial\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context_a782d146185c7de8f061401c5d54e15af}{OnModelCreatingPartial}}(ModelBuilder\ modelBuilder);}
+\DoxyCodeLine{\Hypertarget{_dorms_context_8cs_source_l00341}00341\ \}}
+
+\end{DoxyCode}

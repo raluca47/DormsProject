@@ -1,0 +1,14 @@
+C:\Users\Yes\OneDrive\Documents\ABD\DormsProject\dormsApp.data\bin\Debug\net6.0\dormsApp.data.deps.json
+C:\Users\Yes\OneDrive\Documents\ABD\DormsProject\dormsApp.data\bin\Debug\net6.0\dormsApp.data.runtimeconfig.json
+C:\Users\Yes\OneDrive\Documents\ABD\DormsProject\dormsApp.data\bin\Debug\net6.0\dormsApp.data.dll
+C:\Users\Yes\OneDrive\Documents\ABD\DormsProject\dormsApp.data\bin\Debug\net6.0\dormsApp.data.pdb
+C:\Users\Yes\OneDrive\Documents\ABD\DormsProject\dormsApp.data\obj\Debug\net6.0\dormsApp.data.csproj.AssemblyReference.cache
+C:\Users\Yes\OneDrive\Documents\ABD\DormsProject\dormsApp.data\obj\Debug\net6.0\dormsApp.data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yes\OneDrive\Documents\ABD\DormsProject\dormsApp.data\obj\Debug\net6.0\dormsApp.data.AssemblyInfoInputs.cache
+C:\Users\Yes\OneDrive\Documents\ABD\DormsProject\dormsApp.data\obj\Debug\net6.0\dormsApp.data.AssemblyInfo.cs
+C:\Users\Yes\OneDrive\Documents\ABD\DormsProject\dormsApp.data\obj\Debug\net6.0\dormsApp.data.csproj.CoreCompileInputs.cache
+C:\Users\Yes\OneDrive\Documents\ABD\DormsProject\dormsApp.data\obj\Debug\net6.0\dormsApp.data.dll
+C:\Users\Yes\OneDrive\Documents\ABD\DormsProject\dormsApp.data\obj\Debug\net6.0\refint\dormsApp.data.dll
+C:\Users\Yes\OneDrive\Documents\ABD\DormsProject\dormsApp.data\obj\Debug\net6.0\dormsApp.data.pdb
+C:\Users\Yes\OneDrive\Documents\ABD\DormsProject\dormsApp.data\obj\Debug\net6.0\dormsApp.data.genruntimeconfig.cache
+C:\Users\Yes\OneDrive\Documents\ABD\DormsProject\dormsApp.data\obj\Debug\net6.0\ref\dormsApp.data.dll

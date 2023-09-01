@@ -1,0 +1,47 @@
+﻿@model DormsProject.Models.Room
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Room</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="RoomNumber" />
+            <div class="form-group">
+                <label asp-for="Floor" class="control-label"></label>
+                <input asp-for="Floor" class="form-control" />
+                <span asp-validation-for="Floor" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Isoccupied" class="control-label"></label>
+                <div class="form-check">
+                    <input asp-for="Isoccupied" class="form-check-input" type="checkbox" />
+                    <label class="form-check-label" asp-for="Isoccupied"></label>
+                </div>
+                <span asp-validation-for="Isoccupied" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DormId" class="control-label"></label>
+                <select asp-for="DormId" class="form-control" asp-items="ViewBag.DormId"></select>
+                <span asp-validation-for="DormId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

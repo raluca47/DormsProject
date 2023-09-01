@@ -1,0 +1,73 @@
+﻿@model X.PagedList.IPagedList<DormsProject.Models.Dorm>
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewData["Title"] = "Dorms";
+}
+
+<h1>Dorms</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+@using (Html.BeginForm("Index", "Dorms", FormMethod.Get))
+{
+        <p>
+        Find by address / complex: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" /></p>
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Address
+            </th>
+            <th>
+                Complex
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Adress.AddressId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Complex.ComplexId)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.DormId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.DormId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.DormId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+
+@Html.PagedListPager(Model, page => Url.Action("Index","Dorms",
+    new { page, sortOrder = ViewBag.CurrentSort, currentFilter = ViewBag.CurrentFilter }))
+
+    
+
+
+
+
+
+
+
+
+    

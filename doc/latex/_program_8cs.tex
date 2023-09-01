@@ -1,0 +1,126 @@
+\doxysection{Dorms\+Project/\+Dorms\+Project/\+Program.cs File Reference}
+\hypertarget{_program_8cs}{}\label{_program_8cs}\index{DormsProject/DormsProject/Program.cs@{DormsProject/DormsProject/Program.cs}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_af8107f2f8ff8e8de22a684c8c8ad3e99}{Add\+Controllers\+With\+Views}} ()
+\item 
+builder.\+Services. \mbox{\hyperlink{_program_8cs_a4958c475776dadb3f47bd08627710b19}{Add\+Db\+Context$<$ Dorms\+Context $>$}} (options=$>$ options.\+Use\+Npgsql(builder.\+Configuration.\+Get\+Connection\+String("{}Dorms\+Context"{})))
+\item 
+options\+Builder. \mbox{\hyperlink{_program_8cs_af3dbdd45a870b6670e38cf782e24cbcd}{Use\+Logger\+Factory}} (Logger\+Factory.\+Create(\mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}}=$>$ builder.\+Add\+Console()))
+\item 
+\mbox{\hyperlink{_program_8cs_af2d0c02efe3fbc2d94e5b6e316777c4d}{if}} (!app.\+Environment.\+Is\+Development())
+\item 
+app. \mbox{\hyperlink{_program_8cs_a906a3ce545279a7a73941f1d7b64d7cf}{Use\+Static\+Files}} ()
+\item 
+app. \mbox{\hyperlink{_program_8cs_a94c810d266751293a2d511a720a5625f}{Use\+Routing}} ()
+\item 
+app. \mbox{\hyperlink{_program_8cs_af6f72d752b2e73aa0292f74bd13237ab}{Use\+Authorization}} ()
+\item 
+app. \mbox{\hyperlink{_program_8cs_aec500e125fbbfcd3d99a23db7de60be7}{Map\+Controller\+Route}} (name\+:"{}default"{}, pattern\+:"{}\{controller=Home\}/\{action=Index\}/\{id?\}"{})
+\item 
+app. \mbox{\hyperlink{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}{Run}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \mbox{\hyperlink{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}{builder}} = Web\+Application.\+Create\+Builder(args)
+\item 
+var \mbox{\hyperlink{_program_8cs_a837e64f59efb533e443144192837ccd2}{options\+Builder}} = new Db\+Context\+Options\+Builder$<$\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context}{Dorms\+Context}}$>$()
+\item 
+var \mbox{\hyperlink{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}{app}} = builder.\+Build()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_program_8cs_af8107f2f8ff8e8de22a684c8c8ad3e99}\label{_program_8cs_af8107f2f8ff8e8de22a684c8c8ad3e99} 
+\index{Program.cs@{Program.cs}!AddControllersWithViews@{AddControllersWithViews}}
+\index{AddControllersWithViews@{AddControllersWithViews}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddControllersWithViews()}{AddControllersWithViews()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Controllers\+With\+Views (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a4958c475776dadb3f47bd08627710b19}\label{_program_8cs_a4958c475776dadb3f47bd08627710b19} 
+\index{Program.cs@{Program.cs}!AddDbContext$<$ DormsContext $>$@{AddDbContext$<$ DormsContext $>$}}
+\index{AddDbContext$<$ DormsContext $>$@{AddDbContext$<$ DormsContext $>$}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{AddDbContext$<$ DormsContext $>$()}{AddDbContext< DormsContext >()}}
+{\footnotesize\ttfamily builder.\+Services. Add\+Db\+Context$<$ \mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context}{Dorms\+Context}} $>$ (\begin{DoxyParamCaption}\item[{options}]{,  }\item[{options.}]{Use\+Npgsqlbuilder.\+Configuration.\+Get\+Connection\+String("{}\+Dorms\+Context"{}) }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_af2d0c02efe3fbc2d94e5b6e316777c4d}\label{_program_8cs_af2d0c02efe3fbc2d94e5b6e316777c4d} 
+\index{Program.cs@{Program.cs}!if@{if}}
+\index{if@{if}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{if()}{if()}}
+{\footnotesize\ttfamily if (\begin{DoxyParamCaption}\item[{!}]{app\+::\+Environment\+::\+Is\+Development() }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00019}{19}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+
+\Hypertarget{_program_8cs_aec500e125fbbfcd3d99a23db7de60be7}\label{_program_8cs_aec500e125fbbfcd3d99a23db7de60be7} 
+\index{Program.cs@{Program.cs}!MapControllerRoute@{MapControllerRoute}}
+\index{MapControllerRoute@{MapControllerRoute}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{MapControllerRoute()}{MapControllerRoute()}}
+{\footnotesize\ttfamily app. Map\+Controller\+Route (\begin{DoxyParamCaption}\item[{name\+:"{}default"{}}]{,  }\item[{pattern\+:"{}\{controller=Home\}/\{action=Index\}/\{id?\}"{}}]{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd}\label{_program_8cs_aaa3dbf02e269c3ef7e8546d290c6b3dd} 
+\index{Program.cs@{Program.cs}!Run@{Run}}
+\index{Run@{Run}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily app. Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_af6f72d752b2e73aa0292f74bd13237ab}\label{_program_8cs_af6f72d752b2e73aa0292f74bd13237ab} 
+\index{Program.cs@{Program.cs}!UseAuthorization@{UseAuthorization}}
+\index{UseAuthorization@{UseAuthorization}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseAuthorization()}{UseAuthorization()}}
+{\footnotesize\ttfamily app. Use\+Authorization (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_af3dbdd45a870b6670e38cf782e24cbcd}\label{_program_8cs_af3dbdd45a870b6670e38cf782e24cbcd} 
+\index{Program.cs@{Program.cs}!UseLoggerFactory@{UseLoggerFactory}}
+\index{UseLoggerFactory@{UseLoggerFactory}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseLoggerFactory()}{UseLoggerFactory()}}
+{\footnotesize\ttfamily options\+Builder. Use\+Logger\+Factory (\begin{DoxyParamCaption}\item[{Logger\+Factory.}]{Createbuilder=$>$ builder.\+Add\+Console() }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a94c810d266751293a2d511a720a5625f}\label{_program_8cs_a94c810d266751293a2d511a720a5625f} 
+\index{Program.cs@{Program.cs}!UseRouting@{UseRouting}}
+\index{UseRouting@{UseRouting}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseRouting()}{UseRouting()}}
+{\footnotesize\ttfamily app. Use\+Routing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\Hypertarget{_program_8cs_a906a3ce545279a7a73941f1d7b64d7cf}\label{_program_8cs_a906a3ce545279a7a73941f1d7b64d7cf} 
+\index{Program.cs@{Program.cs}!UseStaticFiles@{UseStaticFiles}}
+\index{UseStaticFiles@{UseStaticFiles}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{UseStaticFiles()}{UseStaticFiles()}}
+{\footnotesize\ttfamily app. Use\+Static\+Files (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d}\label{_program_8cs_a7b225fcb720e4d5ed2bbf60e28a25e6d} 
+\index{Program.cs@{Program.cs}!app@{app}}
+\index{app@{app}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily var app = builder.\+Build()}
+
+
+
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00016}{16}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+
+\Hypertarget{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5}\label{_program_8cs_a2f78352277081c620fd4cf92a5ce15e5} 
+\index{Program.cs@{Program.cs}!builder@{builder}}
+\index{builder@{builder}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{builder}{builder}}
+{\footnotesize\ttfamily var builder = Web\+Application.\+Create\+Builder(args)}
+
+
+
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00005}{5}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+
+\Hypertarget{_program_8cs_a837e64f59efb533e443144192837ccd2}\label{_program_8cs_a837e64f59efb533e443144192837ccd2} 
+\index{Program.cs@{Program.cs}!optionsBuilder@{optionsBuilder}}
+\index{optionsBuilder@{optionsBuilder}!Program.cs@{Program.cs}}
+\doxysubsubsection{\texorpdfstring{optionsBuilder}{optionsBuilder}}
+{\footnotesize\ttfamily var options\+Builder = new Db\+Context\+Options\+Builder$<$\mbox{\hyperlink{class_dorms_project_1_1_models_1_1_dorms_context}{Dorms\+Context}}$>$()}
+
+
+
+Definition at line \mbox{\hyperlink{_program_8cs_source_l00006}{6}} of file \mbox{\hyperlink{_program_8cs_source}{Program.\+cs}}.
+
